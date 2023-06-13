@@ -66,31 +66,33 @@
 
 // ------------------------------3--------------------------
 
-function secondLargest(nums) {
-    let largest = -Infinity;
-    let secondLargest = -Infinity;
+// function secondLargest(nums) {
+//     let largest = -Infinity;
+//     let secondLargest = -Infinity;
 
-    for (let i = 0; i < nums.length; i++) {
-        if (nums[i] > largest) {
-            secondLargest = largest;
-            largest = nums[i];
-        } else if (nums[i] < largest && nums[i] > secondLargest) {
-            secondLargest = nums[i];
-        }
-    }
+//     for (let i = 0; i < nums.length; i++) {
+//         if (nums[i] > largest) {
+//             secondLargest = largest;
+//             largest = nums[i];
+//         } else if (nums[i] < largest && nums[i] > secondLargest) {
+//             secondLargest = nums[i];
+//         }
+//     }
 
-    return secondLargest !== -Infinity ? secondLargest : null;
-}
+//     return secondLargest !== -Infinity ? secondLargest : null;
+// }
 
-// Test cases
-const nums4 = [2, 3, 1, 4, 5];
-console.log(secondLargest(nums4)); // Output: 4
+// // Test cases
+// const nums4 = [2, 3, 1, 4, 5];
+// console.log(secondLargest(nums4)); // Output: 4
 
-const nums5 = [3, 3];
-console.log(secondLargest(nums5)); // Output: null
+// const nums5 = [3, 3];
+// console.log(secondLargest(nums5)); // Output: null
 
-const nums6 = [2];
-console.log(secondLargest(nums6)); // Output: null
+// const nums6 = [2];
+// console.log(secondLargest(nums6)); // Output: null
 
-const nums7 = [];
-console.log(secondLargest(nums7)); // Output: null
+// const nums7 = [];
+// console.log(secondLargest(nums7)); // Output: null
+
+
