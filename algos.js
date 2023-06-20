@@ -245,7 +245,22 @@ class SLL{
         }
     }
     reverse(){
-        //
+        if(this.head == null){
+            console.log(null);
+            return
+        }
+        let prev = null
+        let current = this.head
+        let nextNode = null
+
+        while (!current){
+            nextNode = current.next
+            current.next = prev
+            prev = current
+            current = nextNode
+        }
+        this.head = current
+
     }
 }
 
@@ -258,4 +273,6 @@ sll.push(7869)
 sll.push(100)
 sll.log()
 sll.pop()
+sll.log()
+sll.reverse()
 sll.log()
